@@ -1,7 +1,6 @@
 name: dbt CI
 
 on:
-on:
   workflow_dispatch:
 
   push:
