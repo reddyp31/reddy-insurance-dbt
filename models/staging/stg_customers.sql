@@ -1,6 +1,8 @@
 select
-    1 as customer_id,
-    'CUST001' as customer_code,
-    'Ramesh Kumar' as customer_name,
-    'Hyderabad' as city,
-    'Telangana' as state
+    customer_id,
+    customer_code,
+    customer_name,
+    city,
+    state,
+    date_of_birth
+from {{ source('raw', 'customers') }}
